@@ -1,0 +1,58 @@
+[
+    {
+        "id": "b012dd476eb91833",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3e761a16194a7de3",
+        "type": "http in",
+        "z": "b012dd476eb91833",
+        "name": "",
+        "url": "/",
+        "method": "get",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "5012eb2be3048a6a"
+            ]
+        ]
+    },
+    {
+        "id": "a4ae0d12da4e5da5",
+        "type": "http response",
+        "z": "b012dd476eb91833",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 450,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5012eb2be3048a6a",
+        "type": "template",
+        "z": "b012dd476eb91833",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<!DOCTYPE html>\n<html lang=\"tr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Yapılacaklar Listesi</title>\n</head>\n<body>\n    \n</body>\n</html>",
+        "output": "str",
+        "x": 260,
+        "y": 120,
+        "wires": [
+            [
+                "a4ae0d12da4e5da5"
+            ]
+        ]
+    }
+]
